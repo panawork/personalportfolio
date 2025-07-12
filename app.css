@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    background-color: #464343;
+    padding: 0;
+    margin: 0;
+    /*overflow: hidden;*/
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+    display: block;
+    text-align: center;
+
+}
+
+.navbar a:hover {
+    background-color: #333131;
+}
+
+/*.navbar li {*/
+/*    float: left;*/
+/*}*/
