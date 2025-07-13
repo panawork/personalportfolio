@@ -69,7 +69,8 @@ section {
 
 img {
     max-width: 20%;
-    max-height: 20%;
+    height: auto;
+    display: block;
     margin-right: 32%;
     margin-left: auto;
     border: 30px solid #121212;
@@ -373,3 +374,10 @@ small {
     display: flex;
     margin-left: 26%;
 }
+
+@media screen and (max-width: 600px) {
+    img {
+        max-width: 90%;
+    }
+}
+
