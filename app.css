@@ -80,7 +80,6 @@ img {
 .content {
     display: flex;
     /*justify-content: space-between;*/
-
 }
 
 .text {
@@ -105,6 +104,25 @@ img {
 
 .projects:hover {
     background-color: #146bdd;
+}
+
+.h-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.todo {
+    width: 100%;
+    height: 80%;
+    border: solid black;
+    background: white;
 }
 
 
