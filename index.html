@@ -8,16 +8,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
 
 
-<nav class="navbar">
+<nav class="navbar" id="navbar">
     <ul>
         <li><a href="#header">Home</a></li>
-        <li><a href="#main-content">About</a></li>
-        <li><a href="#footer">Projects</a></li>
+        <li><a href="#main-content">Projects</a></li>
+        <li><a href="#experience">Work Experience</a></li>
     </ul>
 </nav>
 
@@ -48,28 +49,81 @@
     <div class="projects-content">
         <div class="project-one">
             <h2>Project 1</h2>
-            <p>alskdjf;lasdfjkl;asjdfkl;j;laksdfklajsdlf <br>
-            kasdjf;laksdjf;lkasjdfl;kasjdf</p>
-            <iframe class="todo" src="https://panawork.github.io/todoapp/" frameborder="0"></iframe>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> A aliquid asperiores at dignissimos doloremque ea earum <br> ipsam laboriosam modi quod!</p>
+<!--            <iframe class="todo" src="https://panawork.github.io/todoapp/" frameborder="0"></iframe>-->
         </div>
 
         <div class="project-two">
             <h2>Project 2</h2>
-            <p>alskdjf;lasdfjkl;asjdfkl;j;laksdfklajsdlf <br>
-                kasdjf;laksdjf;lkasjdfl;kasjdf</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> A aliquid asperiores at dignissimos doloremque ea earum <br> ipsam laboriosam modi quod!</p>
         </div>
     </div>
 
 
 </section>
 
-<section id="footer">
-    <h1>Nice curves</h1>
-    <p>Lorem Ipsum whteaver whatever</p>
+<section id="experience">
+
+    <h1 class="h-element">My Experience</h1>
+
+    <div class="container">
+        <div class="timeline">
+            <ul>
+                <li>
+                    <div class="timeline-content">
+                        <h2 class="date">23rd June, 2025</h2>
+                        <h1>Software Engineer</h1>
+                        <small><a href="https://rdt.co.uk/" class="links" target="_blank">RDT Limited</a></small>
+                        <p>During my one-week work experience at RDT Limited, I took part in a series of interactive workshops that introduced me to the fast-paced world of software development within the insurance technology sector</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content">
+                        <h2 class="date">28th Decemeber, 2024</h2>
+                        <h1>Kitchen/Hall staff</h1>
+                        <small><a href="https://www.kokorouk.com/" class="links" target="_blank">Kokoro UK Ltd.</a></small>
+                        <p>I work as a food server and help prepare everything for the customers and deliveroo drivers whilst
+                            carrying out excellent customer service.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content">
+                        <h2 class="date">23rd June, 2023</h2>
+                        <h1>Junior Web Developer</h1>
+                        <small><a href="" class="links" target="_blank">Christos Panagiotopoulos</a></small>
+                        <p>Helped create a website using tools like WordPress
+                            and programming languages like: JavaScript, PHP and used
+                            MySQL to help manage databases.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content">
+                        <h2 class="date" >2nd September, 2022</h2>
+                        <h1>Assistant Martial Arts Instructor</h1>
+                        <small><a href="https://promahos.net/" class="links" target="_blank">Promahos Martial Arts</a></small>
+                        <p>As an Assistant Instructor, I support the delivery of martial arts training to both children and adults. I help lead classes by demonstrating techniques, guiding students through drills, and ensuring a positive and disciplined environment</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
 </section>
 
+<button class="scroll-up">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
 
 
+<script>
+
+    const btnScrollToTop = document.querySelector(".scroll-up");
+
+    btnScrollToTop.addEventListener("click", function () {
+       window.scrollTo(0, 0);
+    });
+
+
+</script>
 
 </body>
 </html>

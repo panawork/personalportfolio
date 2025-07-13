@@ -118,6 +118,20 @@ img {
     justify-content: space-around;
 }
 
+.project-one {
+    background-color: #1e1f22;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.project-two {
+    background-color: #1e1f22;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+
+
 .todo {
     width: 100%;
     height: 80%;
@@ -125,25 +139,176 @@ img {
     background: white;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+#experience {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    /*background-color: #101010;*/
+}
 
-/*img {*/
-/*    max-width: 20%;*/
-/*    max-height: 20%;*/
-/*    float: right;*/
+.timeline {
+    width: 80%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.timeline ul {
+    list-style-type: none;
+}
+
+.timeline ul li {
+    padding: 20px;
+    background-color: #1e1f22;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.timeline ul li:last-child {
+    margin-bottom: 0;
+}
+
+/*.timeline ul li:last-child this is only used if the 4th one is the last one{*/
+/*    margin-bottom: 0;*/
 /*}*/
 
+.timeline-content h1 {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.timeline-content p {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+.timeline-content .date {
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+@media only screen and (min-width: 768px) {
+    .timeline::before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 2px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: gray;
+    }
+    .timeline ul li {
+        width: 50%;
+        margin-bottom: 50px;
+        position: relative;
+    }
 
 
-/*.header img {*/
-/*    float: right;*/
-/*    max-width: 20%;*/
-/*    max-height: 20%;*/
-/*    margin-left: 15px;*/
-/*}*/
+
+    .timeline ul li:nth-child(odd) {
+        float: left;
+        clear: right;
+        transform: translateX(-30px);
+        border-radius: 20px 0 20px 20px;
+
+    }
+
+    .timeline ul li:nth-child(even) {
+        float: right;
+        clear: left;
+        transform: translateX(30px);
+        border-radius:0 20px 20px 20px;
+    }
+
+    .timeline ul li:after {
+        content: '';
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        background-color: gray;
+        border-radius: 50%;
+        top: 0;
+        transition: background-color 0.5s;
+    }
+
+    .timeline ul li:nth-child(odd):after {
+        transform: translate(50%, -50%);
+        right: -30px;
+    }
+
+    .timeline ul li:nth-child(even):after {
+        transform: translate(-50%, -50%);
+        left: -30px;
+    }
+
+    .timeline ul li:hover:after {
+        background-color: darkgray;
+    }
+
+    .timeline-content .date {
+        position: absolute;
+        top: -30px;
+    }
+}
+
+small {
+    font-weight: bold;
+}
+
+.links {
+    text-decoration: none;
+    color: white;
+    transition: color 0.2s;
+
+}
+
+.links:hover {
+    color: #808080;
+}
 
 
-/*.navbar li {*/
-/*    float: left;*/
-/*}*/
+.scroll-up {
+    position: fixed;
+    right: 15px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);*/
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    transition: background-color 0.3s;
+}
+
+.scroll-up:hover {
+    background-color: #1e1f22;
+    color: white;
+
+}
+
+.scroll-up:active {
+    background: darkgray;
+}
