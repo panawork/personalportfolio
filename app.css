@@ -319,6 +319,7 @@ small {
     margin-top: 10px;
     justify-content: center;
     align-items: center;
+    font-weight: lighter;
 }
 
 
@@ -332,8 +333,43 @@ small {
 
 .languages-list li {
 
+    border-color: white;
     border-radius: 10px;
     font-size: 25px;
     margin: 30px;
     cursor: pointer;
+}
+
+.contact-details-ul {
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+    margin-left: 25%;
+}
+
+.contact-details-ul li {
+    margin: 20px;
+    font-size: 25px;
+
+}
+
+.contact-details-ul li a {
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+    border-radius: .375rem;
+    background-color: #1e1f22;
+    text-decoration: none;
+    transition: background-color 0.5s;
+}
+
+.contact-details-ul li a:hover {
+    background-color: rgba(128, 128, 128, 0.98);
+}
+
+.contact-heading {
+    display: flex;
+    margin-left: 26%;
 }
