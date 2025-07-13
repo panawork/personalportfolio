@@ -312,3 +312,28 @@ small {
 .scroll-up:active {
     background: darkgray;
 }
+
+.sub-heading {
+
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.languages-list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    /*margin: 30px;*/
+}
+
+.languages-list li {
+
+    border-radius: 10px;
+    font-size: 25px;
+    margin: 30px;
+    cursor: pointer;
+}
