@@ -16,6 +16,7 @@ body {
     color: white;
     background: rgba(18, 18, 18, 0.98);
     overflow-x: hidden;
+    /*overflow: hidden;*/
 
 }
 
@@ -379,5 +380,9 @@ small {
     img {
         max-width: 90%;
     }
+}
+
+#particles-js {
+    position: fixed;
 }
 
